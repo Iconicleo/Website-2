@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" About page of a multipages Website for a University made with Html, Css, font awesome, Google fonts and Javascript">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>University Website</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./img/logo1.png" alt="logo"></a> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html" class="drop">COURSE</a>
+                        
+                    </li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>About Us</h1>      
+
+
+    </section>
+
+    <!-- about us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the World's largest university</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos corrupti vero magni delectus error repudiandae illo! Possimus facilis tempora placeat quis iste enim doloremque in dolores corrupti exercitationem at qui est porro perferendis, quibusdam mollitia sapiente adipisci voluptatem? Commodi porro eius ipsa magnam sit tempore laborum esse. Aut, dolorum adipisci.</p>
+                <a href="#" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="./img/about-us.webp" alt="about">
+            </div>
+        </div>
+    </section>
+    
+
+   
+<!-- Footer -->
+<Section class="footer">
+    <h3>About Us</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni alias ea nesciunt <br> debitis porro officia maxime placeat, consequatur sequi molestiae.</p>
+    <div class="icons">
+         <i class="fa-brands fa-facebook"></i>
+         <i class="fa-brands fa-twitter"></i>
+         <i class="fa-brands fa-instagram"></i>
+         <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made by Ankit Kumar</p>
+</Section>
+
+
+<!-- Js for toggle menu -->
+    <script>
+        "use strict"
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
